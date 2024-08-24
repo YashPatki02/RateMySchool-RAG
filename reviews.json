@@ -1,0 +1,231 @@
+{"reviews":
+ [
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a great experience at this school. The professors were knowledgeable and supportive.",
+        "overall_rating": 4,
+        "individual_ratings": {
+            "professors": 4,
+            "campus": 4,
+            "food": 3,
+            "social_life": 4
+        },
+        "date": "2016-05-02"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "This school exceeded my expectations. The campus is beautiful and the social life is vibrant.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 5,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-03"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a mixed experience at this school. Some professors were great, while others were not.",
+        "overall_rating": 3,
+        "individual_ratings": {
+            "professors": 3,
+            "campus": 4,
+            "food": 3,
+            "social_life": 3
+        },
+        "date": "2016-05-04"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "The campus is stunning and the professors are top-notch. I highly recommend this school.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 5,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-05"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a great time at this school. The food options could be better, but overall it was a positive experience.",
+        "overall_rating": 4,
+        "individual_ratings": {
+            "professors": 4,
+            "campus": 4,
+            "food": 3,
+            "social_life": 4
+        },
+        "date": "2016-05-06"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "This school has a lot to offer. The professors are knowledgeable and the campus is beautiful.",
+        "overall_rating": 4,
+        "individual_ratings": {
+            "professors": 4,
+            "campus": 5,
+            "food": 3,
+            "social_life": 4
+        },
+        "date": "2016-05-07"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a great experience at this school. The professors were engaging and the social life was vibrant.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 4,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-08"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "This school provided me with a well-rounded education. The professors were knowledgeable and the campus was beautiful.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 5,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-09"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a mixed experience at this school. Some professors were great, while others were not.",
+        "overall_rating": 3,
+        "individual_ratings": {
+            "professors": 3,
+            "campus": 4,
+            "food": 3,
+            "social_life": 3
+        },
+        "date": "2016-05-10"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "The campus is stunning and the professors are top-notch. I highly recommend this school.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 5,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-11"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a great time at this school. The food options could be better, but overall it was a positive experience.",
+        "overall_rating": 4,
+        "individual_ratings": {
+            "professors": 4,
+            "campus": 4,
+            "food": 3,
+            "social_life": 4
+        },
+        "date": "2016-05-12"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "This school has a lot to offer. The professors are knowledgeable and the campus is beautiful.",
+        "overall_rating": 4,
+        "individual_ratings": {
+            "professors": 4,
+            "campus": 5,
+            "food": 3,
+            "social_life": 4
+        },
+        "date": "2016-05-13"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a great experience at this school. The professors were engaging and the social life was vibrant.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 4,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-14"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "This school provided me with a well-rounded education. The professors were knowledgeable and the campus was beautiful.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 5,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-15"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a mixed experience at this school. Some professors were great, while others were not.",
+        "overall_rating": 3,
+        "individual_ratings": {
+            "professors": 3,
+            "campus": 4,
+            "food": 3,
+            "social_life": 3
+        },
+        "date": "2016-05-16"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "The campus is stunning and the professors are top-notch. I highly recommend this school.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 5,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-17"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a great time at this school. The food options could be better, but overall it was a positive experience.",
+        "overall_rating": 4,
+        "individual_ratings": {
+            "professors": 4,
+            "campus": 4,
+            "food": 3,
+            "social_life": 4
+        },
+        "date": "2016-05-18"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "This school has a lot to offer. The professors are knowledgeable and the campus is beautiful.",
+        "overall_rating": 4,
+        "individual_ratings": {
+            "professors": 4,
+            "campus": 5,
+            "food": 3,
+            "social_life": 4
+        },
+        "date": "2016-05-19"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "comment": "I had a great experience at this school. The professors were engaging and the social life was vibrant.",
+        "overall_rating": 5,
+        "individual_ratings": {
+            "professors": 5,
+            "campus": 4,
+            "food": 4,
+            "social_life": 5
+        },
+        "date": "2016-05-20"
+    }
+ ]}
