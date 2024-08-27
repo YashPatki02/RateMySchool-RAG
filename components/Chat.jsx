@@ -63,6 +63,8 @@ const Chat = ({ showChat, setShowChat }) => {
             const reader = res.body.getReader();
             const decoder = new TextDecoder();
             let result = "";
+            let count = 0;
+            let inTitle = false;
 
             return reader.read().then(function processText({ done, value }) {
                 if (done) {
@@ -71,6 +73,27 @@ const Chat = ({ showChat, setShowChat }) => {
                 const text = decoder.decode(value || new Uint8Array(), {
                     stream: true,
                 });
+
+                let formattedText = text;
+
+                // DELETE LATER - FOR TESTING
+                console.log(`CHUNK ${count}: ${text}`);
+                count += 1;
+
+                if (text.includes("**")) {
+                    if (text.startsWith("**") && text.endsWith("**")) {
+                        formattedText = `<strong>${formattedText.slice(
+                            2,
+                            -2
+                        )}</strong>`;
+                    }
+                    inTitle = !inTitle;
+                    formattedText = inTitle
+                        ? formattedText.replace("**", "<strong>")
+                        : formattedText.replace("**", "</strong>");
+                }
+                // formattedText.replace(/-/g, "•");
+
                 setMessages((messages) => {
                     let lastMessage = messages[messages.length - 1];
                     let otherMessages = messages.slice(0, messages.length - 1);
@@ -200,9 +223,12 @@ const Chat = ({ showChat, setShowChat }) => {
                                         message.role === "user"
                                             ? "bg-primary"
                                             : ""
-                                    } py-3 sm:px-3 md:px-4 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl`}
+                                    } py-3 sm:px-3 md:px-4 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl whitespace-pre-wrap`}
+                                    dangerouslySetInnerHTML={{
+                                        __html: message.content,
+                                    }}
                                 >
-                                    {message.content}
+                                    {/* {message.content} */}
                                 </div>
                             </div>
                         ))}
