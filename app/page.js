@@ -26,7 +26,7 @@ export default function Home() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        <Header />
+                        <Header showChat={showChat} />
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -50,7 +50,7 @@ export default function Home() {
                         initial={{ y: 400, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ opacity: 0, y: 200 }}
-                        transition={{ duration: 1 }}
+                        transition={{ duration: 0.5 }}
                     >
                         <Chat showChat={showChat} setShowChat={setShowChat} />
                     </motion.div>
