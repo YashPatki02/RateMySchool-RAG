@@ -215,8 +215,8 @@ const Chat = ({ showChat, setShowChat }) => {
                                 key={index}
                                 className={`flex ${
                                     message.role === "user"
-                                        ? "justify-end"
-                                        : "justify-start text-start"
+                                        ? "justify-end text-sm"
+                                        : "justify-start text-start text-sm"
                                 }`}
                             >
                                 <div
