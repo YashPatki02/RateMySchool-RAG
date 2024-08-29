@@ -1,0 +1,8 @@
+.markdown-list ul, .markdown-list ol {
+    margin: 0; /* Remove default margin */
+    padding-left: 1rem; /* Adjust left padding */
+}
+
+.markdown-list li {
+    margin-bottom: 0.5rem; /* Adjust space between list items */
+}

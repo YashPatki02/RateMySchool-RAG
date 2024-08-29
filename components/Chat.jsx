@@ -27,6 +27,7 @@ import {
     DialogClose,
 } from "@/components/ui/dialog";
 import Markdown from "react-markdown";
+import "./Chat.module.css";
 
 const Chat = ({ showChat, setShowChat }) => {
     const [messages, setMessages] = useState([
@@ -137,8 +138,6 @@ const Chat = ({ showChat, setShowChat }) => {
         ]);
     };
 
-    console.log(messages);
-
     return (
         <div className="relative flex h-[calc(100vh-0px)] justify-center items-center -mt-24 ">
             <Card className="w-full h-[90%] flex flex-col px-1 md:px-6 mx-4 sm:mx-12 md:max-w-4xl lg:max-w-5xl">
@@ -215,8 +214,8 @@ const Chat = ({ showChat, setShowChat }) => {
                                 key={index}
                                 className={`flex ${
                                     message.role === "user"
-                                        ? "justify-end text-sm leading-none"
-                                        : "justify-start text-start text-sm leading-none"
+                                        ? "justify-end text-sm"
+                                        : "justify-start text-start text-sm"
                                 }`}
                             >
                                 <div
@@ -224,7 +223,7 @@ const Chat = ({ showChat, setShowChat }) => {
                                         message.role === "user"
                                             ? "bg-primary"
                                             : ""
-                                    } py-3 sm:px-3 md:px-4 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl whitespace-pre-wrap`}
+                                    } py-3 sm:px-3 md:px-4 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl whitespace-pre-wrap markdown-list`}
                                     // dangerouslySetInnerHTML={{
                                     //     __html: message.content,
                                     // }}
