@@ -139,7 +139,7 @@ const Chat = ({ showChat, setShowChat }) => {
 
     return (
         <div className="relative flex h-[calc(100vh-0px)] justify-center items-center -mt-24 ">
-            <Card className="w-full h-[75%] flex flex-col px-1 md:px-6 mx-4 sm:mx-12 md:max-w-4xl lg:max-w-5xl">
+            <Card className="w-full h-[90%] flex flex-col px-1 md:px-6 mx-4 sm:mx-12 md:max-w-4xl lg:max-w-5xl">
                 <CardHeader className="border-b-2 border-primary pb-2">
                     <div className="flex flex-row justify-between items-center">
                         <h2 className="text-xl font-semibold">UniMatch.</h2>
@@ -169,11 +169,9 @@ const Chat = ({ showChat, setShowChat }) => {
                                                 <Button
                                                     size="icon"
                                                     variant="ghost"
-                                                    className="cursor-pointer"
                                                 >
                                                     <RotateCcw
                                                         size={20}
-                                                        strokeWidth={3}
                                                     />
                                                 </Button>
                                             </DialogTrigger>
