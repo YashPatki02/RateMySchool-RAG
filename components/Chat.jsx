@@ -26,13 +26,14 @@ import {
     DialogFooter,
     DialogClose,
 } from "@/components/ui/dialog";
+import Markdown from "react-markdown";
 
 const Chat = ({ showChat, setShowChat }) => {
     const [messages, setMessages] = useState([
         {
             role: "assistant",
             content:
-                "Hi there! I'm your University Assistant. Ask me anything about different universities, and I'll provide the most relevant information. Let's get started!",
+                "Hi there! I'm **UniMatch**. Ask me anything about different universities, and I'll provide the most relevant information. Let's get started!",
         },
     ]);
 
@@ -80,18 +81,18 @@ const Chat = ({ showChat, setShowChat }) => {
                 console.log(`CHUNK ${count}: ${text}`);
                 count += 1;
 
-                if (text.includes("**")) {
-                    if (text.startsWith("**") && text.endsWith("**")) {
-                        formattedText = `<strong>${formattedText.slice(
-                            2,
-                            -2
-                        )}</strong>`;
-                    }
-                    inTitle = !inTitle;
-                    formattedText = inTitle
-                        ? formattedText.replace("**", "<strong>")
-                        : formattedText.replace("**", "</strong>");
-                }
+                // if (text.includes("**")) {
+                //     if (text.startsWith("**") && text.endsWith("**")) {
+                //         formattedText = `<strong>${formattedText.slice(
+                //             2,
+                //             -2
+                //         )}</strong>`;
+                //     }
+                //     inTitle = !inTitle;
+                //     formattedText = inTitle
+                //         ? formattedText.replace("**", "<strong>")
+                //         : formattedText.replace("**", "</strong>");
+                // }
                 // formattedText.replace(/-/g, "•");
 
                 setMessages((messages) => {
@@ -131,7 +132,7 @@ const Chat = ({ showChat, setShowChat }) => {
             {
                 role: "assistant",
                 content:
-                    "Hi there! I'm your University Assistant. Ask me anything about different universities, and I'll provide the most relevant information. Let's get started!",
+                    "Hi there! I'm **UniMatch**. Ask me anything about different universities, and I'll provide the most relevant information. Let's get started!",
             },
         ]);
     };
@@ -226,11 +227,11 @@ const Chat = ({ showChat, setShowChat }) => {
                                             ? "bg-primary"
                                             : ""
                                     } py-3 sm:px-3 md:px-4 rounded-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl whitespace-pre-wrap`}
-                                    dangerouslySetInnerHTML={{
-                                        __html: message.content,
-                                    }}
+                                    // dangerouslySetInnerHTML={{
+                                    //     __html: message.content,
+                                    // }}
                                 >
-                                    {/* {message.content} */}
+                                    <Markdown>{message.content}</Markdown>
                                 </div>
                             </div>
                         ))}
