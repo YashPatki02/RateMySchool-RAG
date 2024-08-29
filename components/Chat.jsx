@@ -137,6 +137,8 @@ const Chat = ({ showChat, setShowChat }) => {
         ]);
     };
 
+    console.log(messages);
+
     return (
         <div className="relative flex h-[calc(100vh-0px)] justify-center items-center -mt-24 ">
             <Card className="w-full h-[90%] flex flex-col px-1 md:px-6 mx-4 sm:mx-12 md:max-w-4xl lg:max-w-5xl">
