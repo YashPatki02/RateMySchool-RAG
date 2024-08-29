@@ -50,7 +50,7 @@ const Hero = ({ showChat, setShowChat }) => {
     return (
         <>
             <motion.section
-                className="container flex flex-col mt-8 items-center gap-8 pt-12 sm:gap-10"
+                className="container flex flex-col mt-6 items-center gap-4 pt-6 sm:gap-6"
                 variants={variants}
                 initial="hidden"
                 animate="visible"
@@ -58,13 +58,13 @@ const Hero = ({ showChat, setShowChat }) => {
             >
                 <motion.h2
                     variants={childVariants}
-                    className="text-2xl font-semibold text-center -mt-4 text-primary sm:text-3xl"
+                    className="text-xl font-semibold text-center -mt-4 text-primary sm:text-2xl"
                 >
                     Find your perfect university.
                 </motion.h2>
                 <motion.div
                     variants={childVariants}
-                    className="w-full h-[85%] pt-4 md:px-6 sm:mx-12 md:max-w-4xl lg:max-w-5xl"
+                    className="w-full h-[85%] pt-4 md:px-6 sm:mx-12 md:max-w-3xl lg:max-w-4xl"
                 >
                     <Card className="flex flex-col bg-transparent shadow-md border-none ">
                         <CardContent className="flex-1 overflow-hidden gap-4 flex flex-col">
@@ -73,8 +73,8 @@ const Hero = ({ showChat, setShowChat }) => {
                                     key={index}
                                     className={`flex ${
                                         message.role === "user"
-                                            ? "justify-end text-end"
-                                            : "justify-start text-start"
+                                            ? "justify-end text-end text-sm"
+                                            : "justify-start text-start text-sm"
                                     }`}
                                 >
                                     <div
@@ -94,7 +94,7 @@ const Hero = ({ showChat, setShowChat }) => {
 
                 <motion.p
                     variants={childVariants}
-                    className="text-center text-lg max-w-2xl text-muted-foreground sm:text-xl"
+                    className="text-center text-md max-w-2xl text-muted-foreground"
                 >
                     Ask questions about universities, student life, and
                     experiences to get results based on direct student feedback.

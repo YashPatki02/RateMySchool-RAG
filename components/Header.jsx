@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ModeToggle } from "./ModeToggle";
 
-const Header = ({showChat}) => {
+const Header = ({ showChat }) => {
     return (
         <motion.header
             initial={{ opacity: 0, y: -20 }}
@@ -25,12 +25,7 @@ const Header = ({showChat}) => {
             )}
             {showChat && (
                 <>
-                    <Link
-                        href="/"
-                        className="w-full flex flex-row gap-2 items-center h-16 justify-center"
-                    >
-                        <h1 className="text-2xl tracking-widest">UniMatch.</h1>
-                    </Link>
+                    <div className="h-16"></div>
                 </>
             )}
         </motion.header>

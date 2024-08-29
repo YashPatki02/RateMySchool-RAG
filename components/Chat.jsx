@@ -9,7 +9,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ArrowUpRight, ArrowUp, RotateCcw } from "lucide-react";
+import { ArrowUpRight, X, RotateCcw } from "lucide-react";
 import {
     Tooltip,
     TooltipContent,
@@ -141,70 +141,72 @@ const Chat = ({ showChat, setShowChat }) => {
             <Card className="w-full h-[75%] flex flex-col px-1 md:px-6 mx-4 sm:mx-12 md:max-w-4xl lg:max-w-5xl">
                 <CardHeader className="border-b-2 border-primary pb-2">
                     <div className="flex flex-row justify-between items-center">
-                        <h2 className="text-2xl font-semibold">Chat.</h2>
-                        <TooltipProvider>
-                            <Tooltip>
-                                <TooltipTrigger>
-                                    <Button
-                                        onClick={() => setShowChat(false)}
-                                        size="icon"
-                                        variant="ghost"
-                                    >
-                                        <ArrowUp size={22} />
-                                    </Button>
-                                </TooltipTrigger>
-                                <TooltipContent side="top">
-                                    <p>Close Chat</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </TooltipProvider>
+                        <h2 className="text-xl font-semibold">UniMatch.</h2>
+                        <div className="flex flex-row gap-2">
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        <Button
+                                            onClick={() => setShowChat(false)}
+                                            size="icon"
+                                            variant="ghost"
+                                        >
+                                            <X size={22} />
+                                        </Button>
+                                    </TooltipTrigger>
+                                    <TooltipContent side="top">
+                                        <p>Close Chat</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
 
-                        <TooltipProvider>
-                            <Tooltip>
-                                <TooltipTrigger>
-                                    <Dialog>
-                                        <DialogTrigger>
-                                            <Button
-                                                size="icon"
-                                                variant="ghost"
-                                                className="cursor-pointer"
-                                            >
-                                                <RotateCcw
-                                                    size={20}
-                                                    strokeWidth={3}
-                                                />
-                                            </Button>
-                                        </DialogTrigger>
-                                        <DialogContent>
-                                            <DialogHeader className="mb-10">
-                                                <DialogTitle>
-                                                    Do you want to restart the
-                                                    chat?
-                                                </DialogTitle>
-                                                <DialogDescription>
-                                                    Restarting the chat will
-                                                    clear all messages.
-                                                </DialogDescription>
-                                            </DialogHeader>
-                                            <DialogFooter className="sm:justify-start">
-                                                <DialogClose asChild>
-                                                    <Button
-                                                        onClick={() => {
-                                                            restartChat();
-                                                        }}
-                                                    >
-                                                        Restart Chat
-                                                    </Button>
-                                                </DialogClose>
-                                            </DialogFooter>
-                                        </DialogContent>
-                                    </Dialog>
-                                </TooltipTrigger>
-                                <TooltipContent side="left">
-                                    <p>Restart Chat</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </TooltipProvider>
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        <Dialog>
+                                            <DialogTrigger>
+                                                <Button
+                                                    size="icon"
+                                                    variant="ghost"
+                                                    className="cursor-pointer"
+                                                >
+                                                    <RotateCcw
+                                                        size={20}
+                                                        strokeWidth={3}
+                                                    />
+                                                </Button>
+                                            </DialogTrigger>
+                                            <DialogContent>
+                                                <DialogHeader className="mb-10">
+                                                    <DialogTitle>
+                                                        Do you want to restart
+                                                        the chat?
+                                                    </DialogTitle>
+                                                    <DialogDescription>
+                                                        Restarting the chat will
+                                                        clear all messages.
+                                                    </DialogDescription>
+                                                </DialogHeader>
+                                                <DialogFooter className="sm:justify-start">
+                                                    <DialogClose asChild>
+                                                        <Button
+                                                            onClick={() => {
+                                                                restartChat();
+                                                            }}
+                                                        >
+                                                            Restart Chat
+                                                        </Button>
+                                                    </DialogClose>
+                                                </DialogFooter>
+                                            </DialogContent>
+                                        </Dialog>
+                                    </TooltipTrigger>
+                                    <TooltipContent side="left">
+                                        <p>Restart Chat</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                        </div>
                     </div>
                 </CardHeader>
                 <CardContent className="flex-1 overflow-hidden mt-4">
