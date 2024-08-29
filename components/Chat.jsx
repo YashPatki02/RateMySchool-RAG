@@ -170,9 +170,7 @@ const Chat = ({ showChat, setShowChat }) => {
                                                     size="icon"
                                                     variant="ghost"
                                                 >
-                                                    <RotateCcw
-                                                        size={20}
-                                                    />
+                                                    <RotateCcw size={20} />
                                                 </Button>
                                             </DialogTrigger>
                                             <DialogContent>
@@ -215,8 +213,8 @@ const Chat = ({ showChat, setShowChat }) => {
                                 key={index}
                                 className={`flex ${
                                     message.role === "user"
-                                        ? "justify-end text-sm"
-                                        : "justify-start text-start text-sm"
+                                        ? "justify-end text-sm leading-none"
+                                        : "justify-start text-start text-sm leading-none"
                                 }`}
                             >
                                 <div
